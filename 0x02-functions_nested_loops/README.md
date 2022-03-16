@@ -1,1 +1,1 @@
-my fuctions nested loops
+C functions and nested loops
