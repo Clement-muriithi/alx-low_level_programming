@@ -1,28 +1,19 @@
-#include <stdlib.h>
-#include <time.h>
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Prints the alphabet.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	signed char x;
-	int n;
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	for (n = 97; n <= 122; n++)
+	for (i = 0; i < 52; i++)
 	{
-	x = n;
-	printf("%c", x);
+		putchar(alp[i]);
 	}
-	for (n = 65; n <= 90; n++)
-	{
-	x = n;
-	printf("%c", x);
-	if (n == 90)
-	{
-	printf("\n");
-	}
-	}
+	putchar('\n');
 	return (0);
 }
